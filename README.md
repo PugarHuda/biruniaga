@@ -14,11 +14,7 @@ Website resmi BUMDes Banyubiru untuk pemasaran produk UMKM unggulan Desa Banyubi
 
 ## Akun Admin
 
-| Field | Value |
-|-------|-------|
-| Email | `adminutama@biruniaga.com` |
-| Password | `biru45niaga45` |
-| Role | Admin (akses penuh) |
+Kredensial admin tidak disimpan di repository. Hubungi developer untuk mendapatkan akses.
 
 ---
 
