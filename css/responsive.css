@@ -1,0 +1,470 @@
+/* ===================================
+   RESPONSIVE.CSS - Responsive Design
+   =================================== */
+
+/* Desktop Large (1440px+) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+/* Tablet Landscape (1024px - 1280px) */
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    /* Typography */
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .section-title,
+    .section-title-center {
+        font-size: 2rem;
+    }
+    
+    /* Layout */
+    .section-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .section-header {
+        grid-column: span 1;
+    }
+    
+    .section-content {
+        grid-column: span 1;
+    }
+    
+    .bumdes-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Features */
+    .bumdes-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .feature-card-offset {
+        margin-top: 0;
+    }
+}
+
+/* Mobile Landscape / Tablet Portrait (768px - 1024px) */
+@media (max-width: 768px) {
+    /* Container */
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* Typography */
+    h1 {
+        font-size: 2.25rem;
+    }
+    
+    h2 {
+        font-size: 1.875rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.25rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-title-center {
+        font-size: 1.75rem;
+    }
+    
+    .section-desc {
+        font-size: 1rem;
+    }
+    
+    /* Sections */
+    .section {
+        padding: 64px 0;
+    }
+    
+    .page-header {
+        padding: 60px 20px;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+    
+    /* Hero */
+    .hero {
+        min-height: 80vh;
+    }
+    
+    .hero-content {
+        padding: 20px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    
+    .btn-primary,
+    .btn-outline {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Product Grid */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .product-grid-full {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    /* Features */
+    .bumdes-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    /* Stats */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    /* Team */
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 48px 0 0;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    /* CTA */
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-content p {
+        font-size: 1rem;
+    }
+    
+    .cta-info {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .btn-whatsapp {
+        padding: 16px 32px;
+        font-size: 1.125rem;
+    }
+    
+    /* Forms */
+    .contact-form {
+        padding: 24px;
+    }
+}
+
+/* Mobile (480px - 768px) */
+@media (max-width: 640px) {
+    /* Container */
+    .container {
+        padding: 0 16px;
+    }
+    
+    /* Typography */
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Buttons */
+    .btn-primary {
+        padding: 14px 24px;
+        font-size: 1rem;
+    }
+    
+    .btn-whatsapp {
+        padding: 14px 24px;
+        font-size: 1rem;
+    }
+    
+    /* Badge */
+    .badge {
+        font-size: 0.625rem;
+        padding: 6px 12px;
+    }
+    
+    /* Product Card */
+    .product-card {
+        border-radius: 8px;
+    }
+    
+    .product-image {
+        height: 200px;
+    }
+    
+    .product-price {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+    
+    .product-info {
+        padding: 16px;
+    }
+    
+    .product-info h3 {
+        font-size: 1rem;
+    }
+    
+    .product-info p {
+        font-size: 0.8125rem;
+    }
+    
+    /* Stats */
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .stat-label {
+        font-size: 0.875rem;
+    }
+}
+
+/* Small Mobile (320px - 480px) */
+@media (max-width: 480px) {
+    /* Typography */
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-title,
+    .section-title-center {
+        font-size: 1.5rem;
+    }
+    
+    /* Container */
+    .container {
+        padding: 0 16px;
+    }
+    
+    /* Section */
+    .section {
+        padding: 48px 0;
+    }
+    
+    /* Product Grid */
+    .product-grid,
+    .product-grid-full {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Stats Grid */
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Feature Box */
+    .feature-box {
+        padding: 24px;
+    }
+    
+    .feature-box .material-symbols-outlined {
+        font-size: 2.5rem;
+    }
+    
+    /* Buttons */
+    .btn-primary,
+    .btn-outline,
+    .btn-whatsapp {
+        padding: 12px 20px;
+        font-size: 0.875rem;
+    }
+    
+    /* Info Box */
+    .info-box {
+        padding: 20px;
+    }
+    
+    /* Feature Card */
+    .feature-card {
+        padding: 24px;
+    }
+    
+    /* CTA Section */
+    .cta-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .cta-info .info-item {
+        font-size: 0.75rem;
+    }
+    
+    /* Page Header */
+    .page-header {
+        padding: 48px 16px;
+    }
+    
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    /* Form */
+    .contact-form {
+        padding: 20px;
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 0.875rem;
+        padding: 10px 14px;
+    }
+}
+
+/* Extra Small Mobile (max-width: 375px) */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.875rem;
+    }
+    
+    .section-title,
+    .section-title-center {
+        font-size: 1.25rem;
+    }
+    
+    .product-image {
+        height: 180px;
+    }
+}
+
+/* Landscape Orientation */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .btn-cta,
+    .btn-primary,
+    .btn-outline,
+    .btn-whatsapp,
+    .menu-toggle,
+    .cta-section {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .section {
+        page-break-inside: avoid;
+        padding: 20px 0;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .btn-primary,
+    .btn-outline {
+        border-width: 3px;
+    }
+    
+    .product-card {
+        border: 2px solid var(--border-color);
+    }
+}

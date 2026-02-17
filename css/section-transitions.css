@@ -1,0 +1,335 @@
+/* ===================================
+   SECTION TRANSITIONS - Gradasi Perpindahan Section
+   Tambahkan file ini ke semua HTML
+   =================================== */
+
+/* ========== GRADASI DIVIDER ANTAR SECTION ========== */
+
+/* SIMPLE GRADIENT CLASSES - Gunakan ini di HTML */
+
+/* Gradasi Hero ke Profil Desa */
+.gradient-hero-to-profil {
+    height: 128px;
+    background: linear-gradient(to bottom, rgba(15, 73, 189, 0) 0%, #f6f6f8 100%);
+}
+
+/* Gradasi Profil Desa ke Produk */
+.gradient-profil-to-products {
+    height: 128px;
+    background: linear-gradient(to bottom, #f6f6f8 0%, #ffffff 100%);
+}
+
+/* Gradasi Produk ke Kontak */
+.gradient-products-to-contact {
+    height: 128px;
+    background: linear-gradient(to bottom, #ffffff 0%, #0f49bd 100%);
+}
+
+/* Gradasi umum light ke white */
+.gradient-light-to-white {
+    height: 128px;
+    background: linear-gradient(to bottom, #f6f6f8 0%, #ffffff 100%);
+}
+
+/* Gradasi umum white ke light */
+.gradient-white-to-light {
+    height: 128px;
+    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f8 100%);
+}
+
+/* Gradasi dari Section ke Section */
+section {
+    position: relative;
+}
+
+/* Section dengan background putih ke abu-abu */
+.section::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(246, 246, 248, 0.5) 50%,
+        var(--background-light) 100%
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+.section-alt::before {
+    background: linear-gradient(
+        to bottom,
+        var(--background-light) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        white 100%
+    );
+}
+
+/* ========== WAVE DIVIDER (Alternatif) ========== */
+.wave-divider-top {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+.wave-divider-bottom {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+/* ========== GRADIENT SEPARATOR BARS ========== */
+.section-separator {
+    height: 120px;
+    background: linear-gradient(
+        to bottom,
+        var(--background-light) 0%,
+        white 50%,
+        var(--background-light) 100%
+    );
+}
+
+.section-separator-primary {
+    height: 120px;
+    background: linear-gradient(
+        to bottom,
+        white 0%,
+        rgba(15, 73, 189, 0.05) 50%,
+        white 100%
+    );
+}
+
+.section-separator-gold {
+    height: 120px;
+    background: linear-gradient(
+        to bottom,
+        var(--background-light) 0%,
+        rgba(255, 223, 0, 0.1) 50%,
+        var(--background-light) 100%
+    );
+}
+
+/* ========== DIAGONAL TRANSITION ========== */
+.diagonal-transition-top {
+    position: relative;
+    padding-top: 80px;
+}
+
+.diagonal-transition-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(
+        135deg,
+        var(--background-light) 0%,
+        white 100%
+    );
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+}
+
+.diagonal-transition-bottom {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.diagonal-transition-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(
+        135deg,
+        white 0%,
+        var(--background-light) 100%
+    );
+    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+}
+
+/* ========== CURVED DIVIDER ========== */
+.curved-divider-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    height: 100px;
+}
+
+.curved-divider-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: var(--background-light);
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+}
+
+/* ========== GRADIENT OVERLAP EFFECT ========== */
+.gradient-overlap {
+    position: relative;
+    margin-top: -50px;
+    z-index: 10;
+}
+
+.gradient-overlap::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        white 100%
+    );
+}
+
+/* ========== FADE TRANSITION ========== */
+.fade-transition {
+    position: relative;
+}
+
+.fade-transition::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 0;
+    right: 0;
+    height: 160px;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        white 100%
+    );
+    pointer-events: none;
+}
+
+/* ========== COLORED GRADIENT TRANSITIONS ========== */
+
+/* Primary Blue Gradient */
+.gradient-from-primary {
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 73, 189, 0.1) 0%,
+        white 100%
+    );
+    padding-top: 80px;
+}
+
+/* Gold Accent Gradient */
+.gradient-from-gold {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 223, 0, 0.15) 0%,
+        white 100%
+    );
+    padding-top: 80px;
+}
+
+/* Dark Gradient */
+.gradient-from-dark {
+    background: linear-gradient(
+        to bottom,
+        rgba(10, 14, 26, 0.8) 0%,
+        white 100%
+    );
+    padding-top: 100px;
+}
+
+/* ========== SLANTED SEPARATOR ========== */
+.slanted-separator {
+    position: relative;
+    height: 100px;
+    background: var(--background-light);
+    transform: skewY(-2deg);
+    transform-origin: top left;
+}
+
+.slanted-separator-reverse {
+    position: relative;
+    height: 100px;
+    background: white;
+    transform: skewY(2deg);
+    transform-origin: top right;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .wave-divider-top svg,
+    .wave-divider-bottom svg {
+        height: 50px;
+    }
+    
+    .section-separator,
+    .section-separator-primary,
+    .section-separator-gold {
+        height: 60px;
+    }
+    
+    .diagonal-transition-top,
+    .diagonal-transition-bottom {
+        padding: 40px 0;
+    }
+    
+    .slanted-separator,
+    .slanted-separator-reverse {
+        height: 60px;
+    }
+}
+
+/* ========== UTILITY CLASSES ========== */
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Remove default section spacing */
+.no-spacing {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Add extra spacing */
+.extra-spacing-top {
+    padding-top: 120px !important;
+}
+
+.extra-spacing-bottom {
+    padding-bottom: 120px !important;
+}

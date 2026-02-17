@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk - Biruniaga</title>
+    <meta name="description" content="Detail produk UMKM unggulan Desa Banyubiru. Lihat spesifikasi, harga, dan pesan langsung via WhatsApp.">
+    <meta name="keywords" content="produk UMKM, Banyubiru, detail produk, pesan produk, BUMDes Biruniaga">
+    <meta property="og:title" content="Detail Produk - Biruniaga">
+    <meta property="og:description" content="Produk olahan berkualitas dari UMKM Desa Banyubiru.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/produk.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="material-symbols-outlined icon-store">storefront</span>
+                    <h1>Biruniaga</h1>
+                </div>
+                <nav class="navbar">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                    <a href="tentang.html" class="nav-link">Tentang</a>
+                    <a href="bumdes.html" class="nav-link">BUMDes</a>
+                    <a href="produk.html" class="nav-link active">Produk</a>
+                    <a href="kontak.html" class="nav-link">Kontak</a>
+                </nav>
+                <a href="kontak.html" class="btn-cta">Hubungi Kami</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="section" style="padding-top: 32px; padding-bottom: 0;">
+        <div class="container">
+            <div style="display: flex; align-items: center; gap: 8px; color: var(--text-gray); font-size: 0.875rem; margin-bottom: 32px;">
+                <a href="index.html" style="color: var(--text-gray);">Beranda</a>
+                <span>›</span>
+                <a href="produk.html" style="color: var(--text-gray);">Produk</a>
+                <span>›</span>
+                <span style="color: var(--primary); font-weight: 600;">Detail Produk</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Section -->
+    <section class="section" style="padding-top: 0;" id="productDetail">
+        <div class="container">
+            <div class="product-detail">
+                <!-- Product Image -->
+                <div class="product-detail-image">
+                    <img id="productImage" src="" alt="Produk" style="min-height: 300px; background: #f3f4f6;">
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-detail-info">
+                    <div class="product-detail-meta">
+                        <span class="meta-badge" id="productCategory">Cemilan</span>
+                        <span class="meta-badge" style="background-color: rgba(34, 197, 94, 0.1); color: #16a34a;">
+                            <span class="material-symbols-outlined" style="font-size: 16px; vertical-align: middle;">inventory</span>
+                            Tersedia
+                        </span>
+                    </div>
+
+                    <h1 id="productName">Nama Produk</h1>
+                    <div class="product-detail-price" id="productPrice">Rp 15.000</div>
+
+                    <div class="product-detail-description">
+                        <h3 style="font-size: 1.125rem; margin-bottom: 12px;">Deskripsi Produk</h3>
+                        <p id="productDescription">Deskripsi produk akan dimuat di sini...</p>
+                    </div>
+
+                    <div class="product-specs">
+                        <h3>Spesifikasi Produk</h3>
+                        <div class="spec-item">
+                            <span class="spec-label">Bahan</span>
+                            <span class="spec-value" id="productIngredients">-</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Berat Bersih</span>
+                            <span class="spec-value" id="productWeight">-</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Masa Simpan</span>
+                            <span class="spec-value" id="productExpire">-</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Sertifikasi</span>
+                            <span class="spec-value">PIRT, Halal MUI</span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 16px; margin-top: 32px;">
+                        <a href="https://wa.me/6283119013471?text=Halo, saya tertarik dengan produk ini apakah masih tersedia untuk stok produk nya?" class="btn-primary" style="flex: 1; text-align: center;">
+                            <span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">shopping_cart</span>
+                            Pesan Sekarang
+                        </a>
+                        <a href="kontak.html" class="btn-outline" style="flex: 1; text-align: center;">
+                            <span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">mail</span>
+                            Tanya Produk
+                        </a>
+                    </div>
+
+                    <div style="margin-top: 24px; padding: 16px; background-color: #f9fafb; border-radius: 8px; border-left: 4px solid var(--primary);">
+                        <h4 style="font-size: 0.875rem; font-weight: 700; margin-bottom: 8px; color: var(--text-dark);">Informasi Pemesanan</h4>
+                        <ul style="font-size: 0.875rem; color: var(--text-gray); line-height: 1.8;">
+                            <li>✓ Minimal order: 10 pack</li>
+                            <li>✓ Harga grosir tersedia untuk pembelian dalam jumlah besar</li>
+                            <li>✓ Pengiriman ke seluruh Indonesia</li>
+                            <li>✓ Gratis ongkir untuk area Semarang (min. pembelian Rp 100.000)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-intro">
+                <h2 class="section-title-center">Produk Terkait</h2>
+                <p class="section-desc">Produk lain yang mungkin Anda suka</p>
+            </div>
+            <div class="product-grid" id="relatedProducts">
+                <div style="grid-column: 1/-1; text-align: center; padding: 48px 0; color: var(--text-gray);">
+                    <p>Memuat produk terkait...</p>
+                </div>
+            </div>
+            <div class="section-action">
+                <a href="produk.html" class="btn-outline">Lihat Semua Produk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span class="material-symbols-outlined">storefront</span>
+                        <span>Biruniaga</span>
+                    </div>
+                    <p>Badan Usaha Milik Desa (BUMDes) Biruniaga adalah pengelola ekonomi mandiri Desa Banyubiru yang fokus pada hilirisasi produk UMKM.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="tentang.html">Tentang</a></li>
+                        <li><a href="bumdes.html">BUMDes</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Informasi BUMDes</h4>
+                    <p>Wates, Banyubiru, Dukun, Magelang, Jawa Tengah.</p>
+                    <p>Email: nirmalabirub@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Biruniaga. Seluruh Hak Cipta Dilindungi. Didukung oleh BUMDes Banyubiru.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="js/supabase-public.js"></script>
+    <script>
+    // Load product detail from Supabase
+    (async function() {
+        var params = new URLSearchParams(window.location.search);
+        var id = params.get('id');
+        if (!id) return;
+
+        try {
+            var result = await db
+                .from('products')
+                .select('*')
+                .eq('id', id)
+                .single();
+            if (result.error || !result.data) return;
+            var p = result.data;
+
+            document.getElementById('productName').textContent = p.name;
+            document.getElementById('productPrice').textContent = formatPrice(p.price);
+            document.getElementById('productCategory').textContent = p.category || '-';
+            document.getElementById('productDescription').textContent = p.description || '';
+            if (p.image) {
+                document.getElementById('productImage').src = p.image;
+                document.getElementById('productImage').alt = p.name;
+            }
+            document.getElementById('productIngredients').textContent = p.ingredients || '-';
+            document.getElementById('productWeight').textContent = p.weight || '-';
+            document.getElementById('productExpire').textContent = p.shelf_life || '-';
+
+            document.title = p.name + ' - Biruniaga';
+
+            // Update WhatsApp order link with product name
+            var orderBtn = document.querySelector('.btn-primary[href*="wa.me"]');
+            if (orderBtn) {
+                var waText = encodeURIComponent('Halo, saya tertarik dengan produk ' + p.name + ' (harga ' + formatPrice(p.price) + '). Apakah masih tersedia?');
+                orderBtn.href = 'https://wa.me/6283119013471?text=' + waText;
+            }
+
+            // Load related products
+            var relResult = await db
+                .from('products')
+                .select('*')
+                .eq('status', 'active')
+                .neq('id', id)
+                .limit(3);
+
+            var relGrid = document.getElementById('relatedProducts');
+            if (relGrid && relResult.data && relResult.data.length > 0) {
+                relGrid.innerHTML = relResult.data.map(function(r) {
+                    return '<div class="product-card">' +
+                        '<a href="detail-produk.html?id=' + r.id + '">' +
+                            '<div class="product-image">' +
+                                '<img src="' + (r.image || '') + '" alt="' + r.name + '">' +
+                                '<div class="product-price">' + formatPrice(r.price) + '</div>' +
+                            '</div>' +
+                            '<div class="product-info">' +
+                                '<h3>' + r.name + '</h3>' +
+                                '<p>' + (r.description ? r.description.substring(0, 80) + '...' : '') + '</p>' +
+                            '</div>' +
+                        '</a>' +
+                    '</div>';
+                }).join('');
+                animateProductCards();
+            }
+        } catch (e) { /* fallback to hardcoded */ }
+    })();
+    </script>
+</body>
+</html>

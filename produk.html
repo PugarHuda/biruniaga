@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk UMKM - Biruniaga</title>
+    <meta name="description" content="Katalog produk UMKM unggulan Desa Banyubiru. Banana Kres, Abon Sapi, Kripik Bakso, Bakpia, Rengginan. Pesan via WhatsApp.">
+    <meta name="keywords" content="produk UMKM, Banyubiru, keripik pisang, abon sapi, bakpia, rengginan, oleh-oleh Magelang">
+    <meta property="og:title" content="Produk UMKM Banyubiru - Biruniaga">
+    <meta property="og:description" content="Koleksi lengkap produk olahan berkualitas dari pengrajin lokal Desa Banyubiru.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/produk.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="material-symbols-outlined icon-store">storefront</span>
+                    <h1>Biruniaga</h1>
+                </div>
+                <nav class="navbar">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                    <a href="tentang.html" class="nav-link">Tentang</a>
+                    <a href="bumdes.html" class="nav-link">BUMDes</a>
+                    <a href="produk.html" class="nav-link active">Produk</a>
+                    <a href="kontak.html" class="nav-link">Kontak</a>
+                </nav>
+                <a href="kontak.html" class="btn-cta">Hubungi Kami</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Produk UMKM Banyubiru</h1>
+            <p>Koleksi lengkap produk olahan berkualitas dari pengrajin lokal</p>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Filter & Sort -->
+            <div class="product-filter">
+                <div class="filter-group">
+                    <label>Kategori:</label>
+                    <select id="categoryFilter">
+                        <option value="all">Semua Produk</option>
+                        <option value="makanan">Makanan</option>
+                        <option value="cemilan">Cemilan</option>
+                        <option value="olahan">Olahan</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Urutkan:</label>
+                    <select id="sortFilter">
+                        <option value="default">Default</option>
+                        <option value="name">Nama (A-Z)</option>
+                        <option value="price-low">Harga Terendah</option>
+                        <option value="price-high">Harga Tertinggi</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Grid (loaded from Supabase) -->
+            <div class="product-grid-full" id="productGrid">
+                <div style="grid-column: 1/-1; text-align: center; padding: 48px 0; color: var(--text-gray);">
+                    <p>Memuat produk...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Tertarik Memesan?</h2>
+                <p>Hubungi kami untuk informasi pemesanan dan harga grosir</p>
+                <a href="kontak.html" class="btn-primary">Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span class="material-symbols-outlined">storefront</span>
+                        <span>Biruniaga</span>
+                    </div>
+                    <p>Badan Usaha Milik Desa (BUMDes) Biruniaga adalah pengelola ekonomi mandiri Desa Banyubiru yang fokus pada hilirisasi produk UMKM.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="tentang.html">Tentang</a></li>
+                        <li><a href="bumdes.html">BUMDes</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Informasi BUMDes</h4>
+                    <p>Wates, Banyubiru, Dukun, Magelang, Jawa Tengah.</p>
+                    <p>Email: nirmalabirub@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Biruniaga. Seluruh Hak Cipta Dilindungi. Didukung oleh BUMDes Banyubiru.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="js/supabase-public.js"></script>
+    <script>
+    // Load all active products from Supabase
+    (async function() {
+        try {
+            var result = await db
+                .from('products')
+                .select('*')
+                .eq('status', 'active')
+                .order('created_at', { ascending: false });
+            if (result.error || !result.data || result.data.length === 0) return;
+            var grid = document.getElementById('productGrid');
+            grid.innerHTML = result.data.map(function(p) {
+                var cat = (p.category || '').toLowerCase();
+                return '<div class="product-card" data-category="' + cat + '" data-price="' + p.price + '">' +
+                    '<a href="detail-produk.html?id=' + p.id + '">' +
+                        '<div class="product-image">' +
+                            '<img src="' + (p.image || '') + '" alt="' + p.name + '">' +
+                            '<div class="product-price">' + formatPrice(p.price) + '</div>' +
+                        '</div>' +
+                        '<div class="product-info">' +
+                            '<h3>' + p.name + '</h3>' +
+                            '<p>' + (p.description ? p.description.substring(0, 100) + '...' : '') + '</p>' +
+                            '<span class="product-category">' + (p.category || '') + '</span>' +
+                        '</div>' +
+                    '</a>' +
+                '</div>';
+            }).join('');
+
+            // Re-init filter/sort with new cards
+            var productCards = document.querySelectorAll('.product-card');
+            var categoryFilter = document.getElementById('categoryFilter');
+            var sortFilter = document.getElementById('sortFilter');
+
+            if (categoryFilter) {
+                categoryFilter.addEventListener('change', function() {
+                    var sel = this.value;
+                    productCards.forEach(function(card) {
+                        card.style.display = (sel === 'all' || card.dataset.category === sel) ? 'block' : 'none';
+                    });
+                });
+            }
+            if (sortFilter) {
+                sortFilter.addEventListener('change', function() {
+                    var prodGrid = document.querySelector('.product-grid-full');
+                    var cards = Array.from(productCards);
+                    var sorted;
+                    switch (this.value) {
+                        case 'name': sorted = cards.sort(function(a,b) { return a.querySelector('h3').textContent.localeCompare(b.querySelector('h3').textContent); }); break;
+                        case 'price-low': sorted = cards.sort(function(a,b) { return parseInt(a.dataset.price) - parseInt(b.dataset.price); }); break;
+                        case 'price-high': sorted = cards.sort(function(a,b) { return parseInt(b.dataset.price) - parseInt(a.dataset.price); }); break;
+                        default: sorted = cards;
+                    }
+                    sorted.forEach(function(c) { prodGrid.appendChild(c); });
+                });
+            }
+            animateProductCards();
+        } catch (e) { /* fallback to hardcoded */ }
+    })();
+    </script>
+</body>
+</html>

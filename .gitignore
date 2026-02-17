@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+admin-panel/node_modules/
+
+# Build output
+admin-panel/dist/
+admin-panel/.vite/
+
+# Environment variables
+.env
+.env.*
+admin-panel/.env
+admin-panel/.env.*
+
+# Vercel
+.vercel/
+admin-panel/.vercel/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+.cache/
+.claude/

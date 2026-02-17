@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Biruniaga</title>
+    <meta name="description" content="Hubungi BUMDes Biruniaga untuk pemesanan produk, kerjasama, atau informasi lainnya. WhatsApp, email, dan kunjungi lokasi kami.">
+    <meta name="keywords" content="kontak BUMDes, Biruniaga, pemesanan produk, WhatsApp, Banyubiru, Magelang">
+    <meta property="og:title" content="Hubungi Kami - Biruniaga">
+    <meta property="og:description" content="Hubungi BUMDes Biruniaga untuk pemesanan dan informasi produk UMKM Banyubiru.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="material-symbols-outlined icon-store">storefront</span>
+                    <h1>Biruniaga</h1>
+                </div>
+                <nav class="navbar">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                    <a href="tentang.html" class="nav-link">Tentang</a>
+                    <a href="bumdes.html" class="nav-link">BUMDes</a>
+                    <a href="produk.html" class="nav-link">Produk</a>
+                    <a href="kontak.html" class="nav-link active">Kontak</a>
+                </nav>
+                <a href="kontak.html" class="btn-cta">Hubungi Kami</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <p>Kami siap membantu kebutuhan Anda</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Informasi Kontak</h2>
+                    <p style="margin-bottom: 32px;">Silakan hubungi kami bisa melalui informasi di bawah ini atau isi form untuk mengirim pesan langsung.</p>
+                    
+                    <div class="contact-item">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Kecamatan Dukun<br>Kabupaten Magelang, Jawa Tengah<br>Indonesia 56482<br>Dusun Wates<br>Desa Banyubiru</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="material-symbols-outlined">call</span>
+                        <div>
+                            <h4>Telepon / WhatsApp</h4>
+                            <p id="contactPhone">+6283119013471</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="material-symbols-outlined">mail</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p id="contactEmail">nirmalabirub@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="material-symbols-outlined">schedule</span>
+                        <div>
+                            <h4>Jam Operasional</h4>
+                            <p>Senin - Sabtu : 08.00 - 17.00 WIB<br>Minggu : Tutup</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 24px;">Kirim Pesan</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap *</label>
+                            <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap Anda">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="nama@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon / WhatsApp *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="08xx xxxx xxxx">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <select id="subject" name="subject">
+                                <option value="pemesanan">Pemesanan Produk</option>
+                                <option value="kerjasama">Kerjasama / Partnership</option>
+                                <option value="informasi">Informasi Produk</option>
+                                <option value="kritik">Kritik & Saran</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Pesan *</label>
+                            <textarea id="message" name="message" required placeholder="Tulis pesan Anda di sini..."></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit">
+                            <span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">send</span>
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (Optional) -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-intro">
+                <h2 class="section-title-center">Lokasi Kami</h2>
+                <p class="section-desc">Kunjungi kantor BUMDes Biruniaga di Desa Banyubiru</p>
+            </div>
+            <div style="width: 100%; height: 400px; border-radius: 12px; overflow: hidden;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15818.98!2d110.3427!3d-7.4908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a8e0b0b0b0b0b%3A0x0!2sDesa+Banyubiru+Kecamatan+Dukun+Magelang!5e0!3m2!1sid!2sid!4v1700000000000"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <p style="text-align: center; margin-top: 16px; color: #6b7280; font-size: 0.875rem;">
+                Gunakan <a href="https://maps.google.com/maps?q=Desa+Banyubiru+Kecamatan+Dukun+Magelang" target="_blank" style="color: var(--primary); font-weight: 600;">Google Maps</a> untuk mendapatkan petunjuk arah
+            </p>
+        </div>
+    </section>
+
+    <!-- Quick Contact Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Butuh Respon Cepat?</h2>
+                <p>Hubungi kami langsung via WhatsApp untuk respons lebih cepat</p>
+                <a href="https://wa.me/6283119013471" class="btn-whatsapp" id="waButton" target="_blank">
+                    <span class="material-symbols-outlined">chat</span>
+                    Chat via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span class="material-symbols-outlined">storefront</span>
+                        <span>Biruniaga</span>
+                    </div>
+                    <p>Badan Usaha Milik Desa (BUMDes) Biruniaga adalah pengelola ekonomi mandiri Desa Banyubiru yang fokus pada hilirisasi produk UMKM.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="tentang.html">Tentang</a></li>
+                        <li><a href="bumdes.html">BUMDes</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Informasi BUMDes</h4>
+                    <p>Wates, Banyubiru, Dukun, Magelang, Jawa Tengah</p>
+                    <p>Email: nirmalabirub@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Biruniaga. Seluruh Hak Cipta Dilindungi. Didukung oleh BUMDes Banyubiru.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="js/supabase-public.js"></script>
+    <script>
+    // Load dynamic contact info
+    var waNumber = '+6283119013471'; // default
+    (async function() {
+        try {
+            await loadSiteSettings();
+            waNumber = getSetting('whatsapp_number', '+6283119013471');
+            var email = getSetting('email', 'nirmalabirub@gmail.com');
+            
+            var phoneEl = document.getElementById('contactPhone');
+            var emailEl = document.getElementById('contactEmail');
+            var waBtn = document.getElementById('waButton');
+            
+            if (phoneEl) phoneEl.textContent = waNumber;
+            if (emailEl) emailEl.textContent = email;
+            if (waBtn) waBtn.href = 'https://wa.me/' + waNumber.replace(/[^0-9]/g, '');
+        } catch (e) { /* Fallback */ }
+    })();
+
+    // Contact form: validate, save to Supabase, then open WhatsApp
+    var form = document.getElementById('contactForm');
+    if (form) {
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            var name = document.getElementById('name').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var phone = document.getElementById('phone').value.trim();
+            var subjectEl = document.getElementById('subject');
+            var subject = subjectEl ? subjectEl.options[subjectEl.selectedIndex].text : '';
+            var message = document.getElementById('message').value.trim();
+
+            // Validation
+            if (!name || !email || !phone || !message) {
+                alert('Mohon lengkapi semua field!');
+                return;
+            }
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Format email tidak valid!');
+                return;
+            }
+            if (phone.length < 10) {
+                alert('Nomor telepon tidak valid!');
+                return;
+            }
+
+            var btn = e.target.querySelector('.form-submit');
+            if (btn) { btn.disabled = true; btn.textContent = 'Mengirim...'; }
+
+            try {
+                // Save to Supabase
+                var result = await db.from('messages').insert({
+                    name: name,
+                    email: email,
+                    phone: phone,
+                    subject: subject,
+                    message: message,
+                    read: false
+                });
+                if (result.error) throw result.error;
+
+                // Open WhatsApp with dynamic number
+                var waClean = waNumber.replace(/[^0-9]/g, '');
+                var waMessage = 'Halo BUMDes Biruniaga,%0A%0A' +
+                    '*Nama:* ' + encodeURIComponent(name) + '%0A' +
+                    '*Email:* ' + encodeURIComponent(email) + '%0A' +
+                    '*No. Telepon:* ' + encodeURIComponent(phone) + '%0A' +
+                    '*Subjek:* ' + encodeURIComponent(subject) + '%0A%0A' +
+                    '*Pesan:*%0A' + encodeURIComponent(message);
+                window.open('https://wa.me/' + waClean + '?text=' + waMessage, '_blank');
+
+                form.reset();
+                if (btn) { btn.textContent = 'Pesan Terkirim!'; btn.style.background = '#16a34a'; }
+                setTimeout(function() {
+                    if (btn) { btn.disabled = false; btn.textContent = 'Kirim Pesan'; btn.style.background = ''; }
+                }, 3000);
+            } catch (err) {
+                console.error('Error saving message:', err);
+                if (btn) { btn.disabled = false; btn.textContent = 'Gagal, Coba Lagi'; btn.style.background = '#dc2626'; }
+                setTimeout(function() {
+                    if (btn) { btn.textContent = 'Kirim Pesan'; btn.style.background = ''; }
+                }, 3000);
+            }
+        });
+    }
+    </script>
+</body>
+</html>
